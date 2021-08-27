@@ -12,9 +12,10 @@ for (a = 0; a < 10; a++)
 {
 printf("%d", a);
 }
-for(b = 'a'; b <= 'f'; b++)
+for (b = 'a'; b <= 'f'; b++)
 {
 putchar(b);
 }
 putchar('\n');
+return (0);
 }
