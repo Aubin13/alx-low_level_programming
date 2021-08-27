@@ -10,7 +10,7 @@ char alpha;
 for (alpha='a'; alpha<= 'z'; alpha++)
 {
 if (alpha != 'q' || alpha != 'e')
-putchar('c');
+putchar(c);
 }
 putchar('\n');
 return (0);
