@@ -12,6 +12,6 @@ for (alpha='a'; alpha<= 'z'; alpha++)
 if (alpha != 'q' || alpha != 'e')
 putchar('c');
 }
-putchar('\n);
+putchar('\n');
 return (0);
 }
