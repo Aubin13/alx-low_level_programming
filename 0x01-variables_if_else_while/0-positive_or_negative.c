@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* more headers goes there */
 /**
 * Main - Print Random
 * If - check whether positive or not
