@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _isdigit - execution
- * @x: integer
- * Return: @x
+ * @c: integer
+ * Return: 1 or 0
  */
 int _isdigit(int c)
 {
