@@ -13,7 +13,7 @@ for (x = 0; x <= size; x++)
 {
 for (y = 0; y <= size; y++)
 {
-_putchar('\#');
+_putchar('#');
 }
 _putchar('\n');
 }
