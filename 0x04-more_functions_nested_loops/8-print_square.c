@@ -2,7 +2,7 @@
 /**
  * print_square - execution
  * @size: size of square
- * Return: size
+ * Return: 0
  */
 void print_square(int size)
 {
@@ -18,7 +18,7 @@ _putchar('#');
 _putchar('\n');
 }
 }
-else
+ else if (size <= 0)
 {
 _putchar('\n');
 }
