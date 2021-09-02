@@ -17,7 +17,7 @@ else
 {
 for (column = 1; column <= n; column++)
 {
-for (space = 1; space < column; sp++)
+for (space = 1; space < column; space++)
 {
 _putchar(' ');
 }
