@@ -13,7 +13,7 @@
  	unsigned int index;
  	for (index = 0; index <= n; index++)
  	{
-	 dest[index] = [index];	
+	 dest[index] = src[index];	
 	}
 	return(dest);
  }
