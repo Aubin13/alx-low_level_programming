@@ -5,13 +5,13 @@
 *@counter: the variable to count the length
 *Return: integer
 */
-int _strlen_recursion(char s)
+int _strlen_recursion(char *s)
 {
 int counter = 0;
-if (s)
+if (*s)
 {
 counter ++;
-  counter += _strlen_recursion(s+1);
+ ounter += _strlen_recursion(s+1);
 }
 else
 {
