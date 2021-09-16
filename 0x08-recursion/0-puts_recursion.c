@@ -1,6 +1,6 @@
 /*
  * File: 0-puts_recursion.c
- * Auth: Ukonu Divine Chisom
+ * Auth: Aubin Isheja Kwisanga
  */
 
 #include "main.h"
