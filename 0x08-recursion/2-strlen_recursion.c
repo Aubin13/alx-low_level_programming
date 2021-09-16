@@ -11,6 +11,7 @@ int counter = 0;
 if (s)
 {
 counter ++;
+  counter += _strlen_recursion(s+1);
 }
 else
 {
