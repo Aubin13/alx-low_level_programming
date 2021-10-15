@@ -1,61 +1,48 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
- * powX - raises b to p
- * @b: base
- * @p: power
- * Return: b the power of p
- */
-int powX(int b, int p)
-{
-	int prod = 1;
+ * _strlen - find the length of a string
+ * @s: pointer to the string to check
+ * Return: void
+*/
 
-	while (p > 0)
-	{
-		prod *= b;
-		p--;
-	}
-	return (prod);
+
+int _strlen(const char *s)
+{
+int i = 0;
+while (s[i])
+	i++;
+
+return (i);
 }
 
-/**
- * _len - length of a string
- * @s:string
- * Return: lenght of s
- */
-int _len(const char *s)
-{
-	int len = 0;
 
-	while (*s)
-	{
-		len++;
-		s++;
-	}
-	return (len);
-}
 /**
  * binary_to_uint - converts a binary number to an unsigned int
- * @b: input string
- * Return: unsigned decimal conversion, 0 if input is NULL
+ * @b: binary number
+ *
+ * Return: 0 or converted number
  */
+
 unsigned int binary_to_uint(const char *b)
 {
-	int power;
-	int num = 0;
+	unsigned int n = 0;
+	int i, len;
 
-	if (!b)
+	if (b == NULL)
 		return (0);
-	power = _len(b) - 1;
-	while (*b)
-	{
-		if (*b != '0' && *b != '1')
-			return (0);
 
-		if (*b == '1')
-			num += powX(2, power);
-		b++;
-		power--;
+	len = _strlen(b);
+
+	for (i = 0; i != len; i++)
+	{
+		if (b[len - i - 1] == '1')
+			n += 1 << i;
+		else if (b[len - i - 1] != '0')
+			return (0);
 	}
-	return (num);
+
+	return (n);
 }
